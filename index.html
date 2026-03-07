@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Eco Nur – Handcrafted naturopathic soap made with all-natural, plant-based ingredients. Pure. Gentle. Earth-grown." />
+  <meta name="keywords" content="natural soap, organic skincare, eco soap, handmade soap, naturopathic, eco nur" />
+  <meta name="author" content="Eco Nur" />
+  <meta property="og:title" content="Eco Nur | Natural Handcrafted Soap" />
+  <meta property="og:description" content="Pure naturopathic soaps crafted from earth-grown ingredients. Four unique blends for every skin type." />
+  <meta property="og:type" content="website" />
+  <title>Eco Nur | Lorem Ipsum Dolor</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ====================================================
+     PRELOADER
+==================================================== -->
+<div id="preloader">
+  <div class="preloader-logo">ECO NUR</div>
+  <div class="preloader-bar">
+    <div class="preloader-bar-fill"></div>
+  </div>
+</div>
+
+<!-- ====================================================
+     LIGHTBOX
+==================================================== -->
+<div id="lightbox" role="dialog" aria-modal="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa fa-times"></i></button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous"><i class="fa fa-chevron-left"></i></button>
+  <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next"><i class="fa fa-chevron-right"></i></button>
+</div>
+
+<!-- ====================================================
+     NAVIGATION
+==================================================== -->
+<nav id="mainNav" class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="nav-brand navbar-brand" href="#hero">ECO<span>NUR</span></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navMenu" aria-controls="navMenu"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger-icon">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-1 align-items-center">
+        <li class="nav-item"><a class="nav-link-eco" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link-eco" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link-eco" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link-eco" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link-eco" href="#pricing">Pricing</a></li>
+        <li class="nav-item ms-2">
+          <a class="btn-eco" href="#order">Order Now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ====================================================
+     HERO SECTION
+==================================================== -->
+<section id="hero">
+  <!-- Animated Bubbles -->
+  <div class="bubble-container" aria-hidden="true">
+    <div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div>
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Text Side -->
+      <div class="col-lg-6 hero-content">
+        <div class="hero-eyebrow fade-up">
+          <i class="fa fa-leaf"></i>
+          100% Natural &nbsp;·&nbsp; Handcrafted
+        </div>
+        <h1 class="hero-title fade-up delay-1">
+          Pure Skin<br/>
+          <span class="italic-accent">Starts</span> with<br/>
+          Pure Nature
+        </h1>
+        <p class="hero-desc fade-up delay-3">
+          Eco Nur crafts each bar from wild-harvested botanicals, cold-pressed oils, and zero synthetic chemicals — so your skin gets nothing but the best the earth has to offer.
+        </p>
+        <div class="d-flex flex-wrap gap-3 fade-up delay-4">
+          <a href="#products" class="btn-eco">Explore Soaps</a>
+          <a href="#about" class="btn-outline-eco">Our Story</a>
+        </div>
+
+        <div class="hero-stats fade-up delay-5">
+          <div class="hero-stat">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="hero-stat">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="hero-stat">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Image Side -->
+      <div class="col-lg-6">
+        <div class="hero-image-wrap fade-up delay-3">
+          <div class="hero-soap-stack">
+            <img
+              src="images/soap.png"
+              alt="Eco Nur Natural Soap"
+              class="hero-soap-main"
+            />
+            <div class="hero-badge">
+              <div class="hero-badge-inner">✦</div>
+              <div style="font-size:0.55rem; letter-spacing:1.5px; line-height:1.3; margin-top:2px;">ECO<br/>NUR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <i class="fa fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ====================================================
+     PRODUCTS SECTION
+==================================================== -->
+<section id="products">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-label">Our Collection</span>
+      <h2 class="section-title">Four <span class="gradient-text">Signature Blends</span></h2>
+      <p class="section-sub mx-auto">Each bar is a carefully curated ritual — crafted for a different skin mood, need, and sense of self.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Product 1 -->
+      <div class="col-lg-3 col-md-6 d-flex fade-up delay-1">
+        <div class="glass-card product-card w-100">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80" alt="Lavender Serenity Soap" />
+            <span class="product-tag bestseller">Bestseller</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Lavender Serenity</h4>
+            <p>Designed to soothe, soften, and melt the stress of the day away.</p>
+            <div class="product-ingredients">
+              <span class="ingredient-chip">Lavender Oil</span>
+              <span class="ingredient-chip">Oat Milk</span>
+              <span class="ingredient-chip"> Butter</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="product-price">৳480 <sub>/ bar</sub></div>
+              <a href="#order" class="btn-eco" style="padding:9px 20px;font-size:0.83rem;">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-lg-3 col-md-6 d-flex fade-up delay-2">
+        <div class="glass-card product-card w-100">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&q=80" alt="Citrus Burst Soap" />
+            <span class="product-tag new">New</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Citrus Burst</h4>
+            <p>Brightens skin and awakens your senses for an energizing morning ritual.</p>
+            <div class="product-ingredients">
+              <span class="ingredient-chip">Orange Peel</span>
+              <span class="ingredient-chip">Lemon Oil</span>
+              <span class="ingredient-chip">Vitamin C</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="product-price">৳520 <sub>/ bar</sub></div>
+              <a href="#order" class="btn-eco" style="padding:9px 20px;font-size:0.83rem;">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-lg-3 col-md-6 d-flex fade-up delay-3">
+        <div class="glass-card product-card w-100">
+          <div class="product-card-img">
+            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=500&q=80" alt="Charcoal Detox Soap" />
+            <span class="product-tag">Detox</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Charcoal Detox</h4>
+            <p>Leaves skin refreshed and balanced with deep pore cleansing.</p>
+            <div class="product-ingredients">
+              <span class="ingredient-chip"> Charcoal</span>
+              <span class="ingredient-chip">Tea Tree</span>
+              <span class="ingredient-chip">Aloe Vera</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="product-price">৳560 <sub>/ bar</sub></div>
+              <a href="#order" class="btn-eco" style="padding:9px 20px;font-size:0.83rem;">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-lg-3 col-md-6 d-flex fade-up delay-4">
+        <div class="glass-card product-card w-100">
+          <div class="product-card-img">
+            <img src="images/soap.png" alt="Rose Botanical Soap" />
+            <span class="product-tag" style="background:#be185d;">Luxury</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Rose Botanical</h4>
+            <p>Promotes radiance and deep hydration for a visibly luxurious glow.</p>
+            <div class="product-ingredients">
+              <span class="ingredient-chip">Rosehip Oil</span>
+              <span class="ingredient-chip">Rose Petals</span>
+              <span class="ingredient-chip">Argan Oil</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="product-price">৳620 <sub>/ bar</sub></div>
+              <a href="#order" class="btn-eco" style="padding:9px 20px;font-size:0.83rem;">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     ABOUT SECTION
+==================================================== -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Image -->
+      <div class="col-lg-5 fade-up">
+        <div class="about-img-wrap">
+          <div class="about-img-accent"></div>
+          <img
+            src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?w=600&q=80"
+            alt="Eco Nur handcrafted soap process"
+            class="about-img-main"
+          />
+          <div class="about-img-badge">
+            <div class="num">100%</div>
+            <div class="lbl">Chemical Free</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="col-lg-7">
+        <div class="fade-up delay-1">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Born from a <span class="gradient-text">Passion for Purity</span></h2>
+          <p class="section-sub mb-4">
+            Eco Nur began with one belief: your skin deserves only what nature provides. Every bar is cold-processed in small batches to retain the full potency of its botanical ingredients.
+          </p>
+          <p class="section-sub mb-5" style="font-size:0.95rem;">
+            We source our oils, clays, and botanicals from certified organic farms — no shortcuts, no compromises.
+          </p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-sm-6 fade-up delay-2">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fa fa-flask"></i></div>
+              <div>
+                <h6>Cold-Process Crafting</h6>
+                <p>Preserves natural glycerin and active botanicals in every bar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 fade-up delay-3">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fa fa-seedling"></i></div>
+              <div>
+                <h6>Certified Organic</h6>
+                <p>All base oils and botanicals sourced from certified organic farms.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 fade-up delay-4">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fa fa-heart"></i></div>
+              <div>
+                <h6>Skin-Safe Formula</h6>
+                <p>Dermatologically tested, suitable for sensitive and all skin types.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 fade-up delay-5">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fa fa-recycle"></i></div>
+              <div>
+                <h6>Eco Packaging</h6>
+                <p>Zero-plastic, biodegradable wrapping that loves the planet back.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ====================================================
+     INGREDIENTS SECTION
+==================================================== -->
+<section id="ingredients">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-label">What's Inside</span>
+      <h2 class="section-title">Earth-Grown <span style="color:var(--mint);">Ingredients</span></h2>
+      <p class="section-sub mx-auto" style="color:rgba(167,243,208,0.75);">Every single ingredient is handpicked for its proven skin benefit and earth-friendly footprint.</p>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-1">
+        <div class="ingredient-card">
+          <div class="ingredient-icon">🌿</div>
+          <h5>Aloe Vera</h5>
+          <p>Deep moisture & soothing relief for irritated skin.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-2">
+        <div class="ingredient-card">
+          <div class="ingredient-icon">🫒</div>
+          <h5>Olive Oil</h5>
+          <p>Rich in antioxidants, softens and conditions skin.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-3">
+        <div class="ingredient-card">
+          <div class="ingredient-icon">🌸</div>
+          <h5>Rose Hip</h5>
+          <p>Brightens tone & reduces fine lines naturally.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-4">
+        <div class="ingredient-card">
+          <div class="ingredient-icon">🍋</div>
+          <h5>Citrus Peel</h5>
+          <p>Natural exfoliant that reveals glowing skin beneath.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-5">
+        <div class="ingredient-card">
+          <div class="ingredient-icon">🌻</div>
+          <h5>Sunflower Oil</h5>
+          <p>Lightweight nourishment packed with Vitamin E.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 fade-up delay-1">
+        <div class="ingredient-card">
+          <div class="ingredient-icon">🌾</div>
+          <h5>Oat Extract</h5>
+          <p>Calms inflammation and forms a protective skin barrier.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     GALLERY SECTION
+==================================================== -->
+<!-- <section id="gallery">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-label">Visual Story</span>
+      <h2 class="section-title">Soap <span class="gradient-text">as Art</span></h2>
+      <p class="section-sub mx-auto">Each bar is hand-poured, hand-cut, and hand-finished — making every piece genuinely one-of-a-kind.</p>
+    </div>
+
+    <div class="gallery-grid fade-up delay-1">
+      <div class="gallery-item" data-gallery="0">
+        <img src="https://images.unsplash.com/photo-1584305574647-0cc949a2bb9f?w=700&q=80" alt="Eco Nur soap collection" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-gallery="1">
+        <img src="https://images.unsplash.com/photo-1612532275214-e4ca76d0e4d1?w=500&q=80" alt="Natural soap bars" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-gallery="2">
+        <img src="https://images.unsplash.com/photo-1631730486572-226d1f595b68?w=500&q=80" alt="Handcrafted botanical soap" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-gallery="3">
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&q=80" alt="Lavender soap ingredients" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item" data-gallery="4">
+        <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=500&q=80" alt="Eco packaging soap" loading="lazy" />
+        <div class="gallery-overlay"><i class="fa fa-search-plus"></i></div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ====================================================
+     REVIEWS SECTION
+==================================================== -->
+<section id="reviews">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-label">Testimonials</span>
+      <h2 class="section-title">What Our <span class="gradient-text">Customers Say</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 d-flex fade-up delay-1">
+        <div class="glass-card review-card w-100">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">My skin has never felt this soft and healthy. The Lavender Serenity bar is now a permanent fixture in my shower — I genuinely can't imagine going back to commercial soap.</p>
+          <div class="review-author">
+            <!-- <img src="https://i.pravatar.cc/80?img=47" alt="Nadia Rahman" class="review-avatar" /> -->
+            <div>
+              <div class="review-author-name">Nadia Rahman</div>
+              <div class="review-author-loc"><i class="fa fa-map-marker-alt me-1" style="color:var(--emerald);"></i>Dhaka, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex fade-up delay-2">
+        <div class="glass-card review-card w-100">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The Charcoal Detox bar cleared up the congestion on my nose in just two weeks. I was skeptical at first — now I recommend Eco Nur to literally everyone I know.</p>
+          <div class="review-author">
+            <!-- <img src="https://i.pravatar.cc/80?img=12" alt="Tanvir Hossain" class="review-avatar" /> -->
+            <div>
+              <div class="review-author-name">Tanvir Hossain</div>
+              <div class="review-author-loc"><i class="fa fa-map-marker-alt me-1" style="color:var(--emerald);"></i>Chittagong, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex fade-up delay-3">
+        <div class="glass-card review-card w-100">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">I ordered the full set as a gift and my sister was absolutely thrilled. The eco packaging is stunning and the scents are divine. Eco Nur is luxury without the guilt.</p>
+          <div class="review-author">
+            <!-- <img src="https://i.pravatar.cc/80?img=32" alt="Priya Chowdhury" class="review-avatar" /> -->
+            <div>
+              <div class="review-author-name">Priya Chowdhury</div>
+              <div class="review-author-loc"><i class="fa fa-map-marker-alt me-1" style="color:var(--emerald);"></i>Sylhet, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="col-lg-4 col-md-6 d-flex fade-up delay-4">
+        <div class="glass-card review-card w-100">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">As someone with very sensitive skin, I've tried dozens of "natural" soaps that still caused irritation. Eco Nur's Rose Botanical is genuinely different — zero reaction, pure glow.</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/80?img=23" alt="Fatema Begum" class="review-avatar" />
+            <div>
+              <div class="review-author-name">Fatema Begum</div>
+              <div class="review-author-loc"><i class="fa fa-map-marker-alt me-1" style="color:var(--emerald);"></i>Rajshahi, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="col-lg-4 col-md-6 d-flex fade-up delay-5">
+        <div class="glass-card review-card w-100">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Citrus Burst is my alarm clock now — that fresh citrus scent in the morning is better than coffee. My skin looks brighter and my husband keeps asking what I'm using!</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/80?img=44" alt="Roksana Islam" class="review-avatar" />
+            <div>
+              <div class="review-author-name">Roksana Islam</div>
+              <div class="review-author-loc"><i class="fa fa-map-marker-alt me-1" style="color:var(--emerald);"></i>Khulna, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="col-lg-4 col-md-6 d-flex fade-up delay-1">
+        <div class="glass-card review-card w-100">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">Fast delivery, beautiful packaging, and the soap lasted much longer than I expected. A small bar went well over a month with daily use. Absolutely worth every taka.</p>
+          <div class="review-author">
+            <img src="https://i.pravatar.cc/80?img=15" alt="Mahbubur Rahman" class="review-avatar" />
+            <div>
+              <div class="review-author-name">Mahbubur Rahman</div>
+              <div class="review-author-loc"><i class="fa fa-map-marker-alt me-1" style="color:var(--emerald);"></i>Comilla, Bangladesh</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     PRICING SECTION
+==================================================== -->
+<section id="pricing">
+  <div class="container">
+    <div class="text-center mb-5 fade-up">
+      <span class="section-label">Pricing</span>
+      <h2 class="section-title">Simple, <span class="gradient-text">Honest Pricing</span></h2>
+      <p class="section-sub mx-auto">Choose a plan that fits your skin ritual — single bars, family bundles, or a full seasonal subscription.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Starter -->
+      <div class="col-lg-4 col-md-6 d-flex fade-up delay-1">
+        <div class="glass-card pricing-card w-100">
+          <div class="pricing-name">Single Bar</div>
+          <div class="pricing-price"><sup>৳</sup>480</div>
+          <div class="pricing-period">per bar, one-time</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><i class="fa fa-check-circle"></i> Choose any 1 variant</li>
+            <li><i class="fa fa-check-circle"></i> Eco-friendly packaging</li>
+            <li><i class="fa fa-check-circle"></i> WhatsApp order support</li>
+            <li class="disabled"><i class="fa fa-times-circle"></i> Bundle discount</li>
+            <li class="disabled"><i class="fa fa-times-circle"></i> Free shipping</li>
+          </ul>
+          <a href="#order" class="btn-outline-eco w-100 text-center d-block">Order Single</a>
+        </div>
+      </div>
+
+      <!-- Bundle (Featured) -->
+      <div class="col-lg-4 col-md-6 d-flex fade-up delay-2">
+        <div class="glass-card pricing-card featured w-100">
+          <div class="pricing-name">Complete Set</div>
+          <div class="pricing-price"><sup>৳</sup>1,750</div>
+          <div class="pricing-period">all 4 variants — save ৳370</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><i class="fa fa-check-circle"></i> All 4 unique variants</li>
+            <li><i class="fa fa-check-circle"></i> Premium gift box</li>
+            <li><i class="fa fa-check-circle"></i> Priority WhatsApp support</li>
+            <li><i class="fa fa-check-circle"></i> 20% bundle discount</li>
+            <li><i class="fa fa-check-circle"></i> Free nationwide shipping</li>
+          </ul>
+          <a href="#order" class="btn-pricing-featured d-block">Get the Full Set</a>
+        </div>
+      </div>
+
+      <!-- Refill -->
+      <div class="col-lg-4 col-md-6 d-flex fade-up delay-3">
+        <div class="glass-card pricing-card w-100">
+          <div class="pricing-name">Monthly Ritual</div>
+          <div class="pricing-price"><sup>৳</sup>890</div>
+          <div class="pricing-period">per month, 2 bars delivered</div>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li><i class="fa fa-check-circle"></i> 2 bars of your choice</li>
+            <li><i class="fa fa-check-circle"></i> Eco packaging every time</li>
+            <li><i class="fa fa-check-circle"></i> Skip or cancel anytime</li>
+            <li><i class="fa fa-check-circle"></i> Subscriber-only new blends</li>
+            <li class="disabled"><i class="fa fa-times-circle"></i> Free gift box</li>
+          </ul>
+          <a href="#order" class="btn-outline-eco w-100 text-center d-block">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     ORDER SECTION
+==================================================== -->
+<section id="order">
+  <div class="container">
+    <div class="row justify-content-center fade-up">
+      <div class="col-lg-8">
+        <div class="order-card">
+          <div class="order-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h2>Ready to Order?</h2>
+          <p>
+            Tap the button below to open a WhatsApp chat with us directly. Tell us which variants you'd like, your delivery address, and we'll handle the rest — fast, personal, and hassle-free.
+          </p>
+          <a
+            href="https://wa.me/8801XXXXXXXXX?text=Hello%20Eco%20Nur!%20I'd%20like%20to%20order%20some%20soap%20bars.%20Please%20guide%20me."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-whatsapp"
+          >
+            <i class="fab fa-whatsapp"></i>
+            Chat on WhatsApp
+          </a>
+          <p class="order-note mt-3">
+            <i class="fa fa-clock me-1"></i>
+            We typically respond within 30 minutes during business hours (9am – 9pm BDT).
+          </p>
+          <p class="order-note">
+            <i class="fa fa-shipping-fast me-1"></i>
+            Nationwide delivery within 2–4 business days. Dhaka metro: next-day delivery available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     FOOTER
+==================================================== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">ECO NUR</div>
+      <div class="footer-copy">© 2025 Eco Nur · All Rights Reserved · Crafted with <span style="color:var(--mint);">♥</span> and Nature</div>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>
