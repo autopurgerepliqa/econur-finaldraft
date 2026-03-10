@@ -79,12 +79,7 @@
       overflow: hidden;
       isolation: isolate;
     }
-    .order-btn:hover {
-      background: var(--pale);
-      color: var(--forest);
-      border-color: var(--pale);
-      transform: translateX(-3px);
-    }
+
     .order-btn i { font-size: 0.8rem; }
 
   .order-btn::after {
