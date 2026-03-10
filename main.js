@@ -134,3 +134,26 @@
     scrollTicking = true;
   }
 });
+
+
+
+// Toggle pricing bundle 
+
+  function switchPricing(tab) {
+    document.getElementById('tab-onetime').style.display = tab === 'onetime' ? '' : 'none';
+    document.getElementById('tab-sub').style.display     = tab === 'sub'     ? '' : 'none';
+
+    const btns = { onetime: document.getElementById('toggle-onetime'), sub: document.getElementById('toggle-sub') };
+    const active = btns[tab];
+    const inactive = btns[tab === 'onetime' ? 'sub' : 'onetime'];
+
+    active.style.background = 'var(--emerald-dark)';
+    active.style.color      = 'var(--pale)';
+
+    inactive.style.background  = 'transparent';
+    inactive.style.color        = '';
+    inactive.style.borderColor  = '';
+  }
+
+  // Set initial state
+  switchPricing('onetime');

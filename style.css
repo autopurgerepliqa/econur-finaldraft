@@ -656,19 +656,51 @@
       transform: scale(1.07);
     }
 
-    .product-tag {
-      position: absolute;
-      top: 12px; left: 12px;
-      background: var(--forest);
-      color: white;
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 20px;
-      background: red;
-    }
+.product-tag {
+  position: absolute;
+  top: 12px; left: 12px;
+  background: linear-gradient(135deg, var(--mint), var(--forest));
+  color: var(--pale);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.product-tag::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 100%
+  );
+  transform: translateX(-175%);
+  animation: tag-shimmer 2.8s ease-in-out infinite;
+  animation-delay: 1s;
+  pointer-events: none;
+}
+
+@keyframes tag-shimmer {
+  0%   { transform: translateX(-175%); }
+  40%  { transform: translateX(250%); }
+  100% { transform: translateX(250%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-tag::after {
+    animation: none;
+  }
+}
 
 
     .product-card-body { padding: 0 24px 24px; }
@@ -753,13 +785,14 @@
     }
 
     .ingredient-icon {
-      width: 64px; height: 64px;
+      width: 32px; height: 32px;
       background: linear-gradient(135deg, var(--emerald), var(--forest-light));
-      border-radius: 18px;
+      border-radius: 9px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.6rem;
+      font-size: 1rem;
       margin: 0 auto 16px;
       box-shadow: 0 8px 24px rgba(16,185,129,0.3);
+      color: var(--pale-2);
     }
 
     .ingredient-card h5 {

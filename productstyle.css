@@ -58,6 +58,70 @@
     }
     .home-btn i { font-size: 0.8rem; }
 
+
+    .order-btn {
+      position: fixed;
+      top: 24px; right: 24px;
+      z-index: 100;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--forest);
+      border: 1px solid var(--forest-light);
+      color: var(--pale-2);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 4px 20px rgba(6,78,59,0.1);
+      transition: all var(--transition);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .order-btn:hover {
+      background: var(--pale);
+      color: var(--forest);
+      border-color: var(--pale);
+      transform: translateX(-3px);
+    }
+    .order-btn i { font-size: 0.8rem; }
+
+  .order-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 100%
+  );
+  transform: translateX(-175%);
+  animation: tag-shimmer 2.8s ease-in-out infinite;
+  animation-delay: 1s;
+  pointer-events: none;
+}
+
+@keyframes tag-shimmer {
+  0%   { transform: translateX(-175%); }
+  40%  { transform: translateX(250%); }
+  100% { transform: translateX(250%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .order-btn::after {
+    animation: none;
+  }
+}
+
+
+
+
+
     /* ── Hero Image ── */
     .product-hero {
       position: relative;
@@ -79,7 +143,7 @@
     .product-hero-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(6,78,59,0.55) 0%, transparent 55%);
+      background: linear-gradient(to top, rgba(6, 78, 59, 0.726) 0%, transparent 55%);
     }
 
     .product-hero-badge {
@@ -262,6 +326,8 @@
       border-radius: 16px;
       padding: 24px 20px;
       transition: transform var(--transition), box-shadow var(--transition);
+      align-items: center;
+      text-align: center;
     }
 
     .benefit-card:hover {
@@ -272,6 +338,7 @@
     .benefit-icon {
       font-size: 1.6rem;
       margin-bottom: 12px;
+      color: var(--mint);
     }
 
     .benefit-card h5 {
