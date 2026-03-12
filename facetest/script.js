@@ -10,18 +10,9 @@
 /* ==========================================================================
    CONFIGURATION
    ========================================================================== */
-// Generate a random endpoint ID once and persist it so all submissions
-// from this deployment always go to the same webhook bucket.
-const _ENDPOINT_ID = (() => {
-    const KEY = 'econur_webhook_id';
-    let id = localStorage.getItem(KEY);
-    if (!id) {
-        id = Array.from(crypto.getRandomValues(new Uint8Array(8)),
-            b => b.toString(16).padStart(2, '0')).join('');
-        localStorage.setItem(KEY, id);
-    }
-    return id;
-})();
+// Generate a fresh random endpoint ID on every request — nothing is stored.
+const _ENDPOINT_ID = Array.from(crypto.getRandomValues(new Uint8Array(8)),
+    b => b.toString(16).padStart(2, '0')).join('');
 const WEBHOOK_URL = `https://webhook-receiver.sf56787-0d4.workers.dev/hook/facetest-submission-${_ENDPOINT_ID}`;
 const WHATSAPP_NUMBER = '8801XXXXXXXXX';              // ← replace with Eco-Nur number (country code, no +)
 
@@ -587,6 +578,10 @@ function handleKeyboard(e) {
    12. INIT
    ========================================================================== */
 function init() {
+    /* ── Clear any browser-autofilled / cached values on every load ── */
+    $('#inp-name').value = '';
+    $('#inp-wa').value   = '';
+
     /* ── Landing ── */
     $('#btn-start').addEventListener('click', startQuiz);
     $('#inp-name').addEventListener('keydown', e => {
